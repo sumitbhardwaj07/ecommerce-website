@@ -1,6 +1,6 @@
 import { Button, Container, Navbar } from "react-bootstrap";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <>
       <Navbar bg="dark" variant="dark">
@@ -8,7 +8,7 @@ const Header = () => {
           <Navbar.Brand href="#home">HOME</Navbar.Brand>
           <Navbar.Brand href="#store">STORE</Navbar.Brand>
           <Navbar.Brand href="#about">ABOUT</Navbar.Brand>
-          <Button variant="outline-info">cart</Button>
+          <Button variant="outline-info" onClick={props.show}>cart</Button>
         </Container>
       </Navbar>
       <div className="bg-secondary text-white py-4 text-center">
