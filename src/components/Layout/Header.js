@@ -1,6 +1,9 @@
 import { Button, Container, Navbar } from "react-bootstrap";
+import { useCart } from "../store/cartContext";
 
 const Header = (props) => {
+  const { cartItems } = useCart();
+
   return (
     <>
       <Navbar bg="dark" variant="dark">
@@ -8,7 +11,7 @@ const Header = (props) => {
           <Navbar.Brand href="#home">HOME</Navbar.Brand>
           <Navbar.Brand href="#store">STORE</Navbar.Brand>
           <Navbar.Brand href="#about">ABOUT</Navbar.Brand>
-          <Button variant="outline-info" onClick={props.show}>cart</Button>
+          <Button variant="outline-info" onClick={props.show}>cart({cartItems.length})</Button>
         </Container>
       </Navbar>
       <div className="bg-secondary text-white py-4 text-center">

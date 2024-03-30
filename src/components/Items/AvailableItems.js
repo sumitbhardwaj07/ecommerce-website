@@ -1,4 +1,5 @@
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
+import AvailableItem from "./AvailableItem";
 
 const productsArr = [
   {
@@ -36,21 +37,7 @@ const productsArr = [
 
 const AvailableItems = () => {
   const itemsList = productsArr.map((product, index) => (
-    <Col key={index} md={6} className="mb-4">
-      <Card className="p-4  border-0">
-      <Card.Title className="text-center mb-3">{product.title}</Card.Title>
-        <div className="text-center mb-3">
-          <Card.Img variant="top" src={product.imageUrl} className="img-fluid" style={{ maxWidth: '300px', maxHeight: '300px' }} />
-        </div>
-        <Card.Body>
-          
-          <Card.Text className="text-center mb-3">
-            Price: ${product.price}  
-            <Button variant="primary" className="align-self-end">ADD TO CART</Button>
-          </Card.Text>
-        </Card.Body>
-      </Card>
-    </Col>
+    <AvailableItem key={index} product={product}/>
   ));
   return (
     <Container>
