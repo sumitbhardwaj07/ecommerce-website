@@ -1,4 +1,4 @@
-import { Button, Card, Col, Container, Row } from "react-bootstrap";
+import {  Container, Row } from "react-bootstrap";
 import AvailableItem from "./AvailableItem";
 
 const productsArr = [

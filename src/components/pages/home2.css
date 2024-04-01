@@ -1,0 +1,7 @@
+.max-width-container {
+    max-width: 800px;
+  }
+
+  .underline-row {
+    border-bottom: 1px solid black; 
+  }
