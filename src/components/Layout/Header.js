@@ -1,6 +1,6 @@
 import {  Button, Container, Nav, Navbar } from "react-bootstrap";
 import { useCart } from "../store/cartContext";
-import { Link, NavLink } from "react-router-dom";
+
 
 const Header = (props) => {
   const { cartItems } = useCart();
@@ -14,6 +14,7 @@ const Header = (props) => {
             <Nav.Link href="/home" className="me-5">HOME</Nav.Link>
             <Nav.Link href="/store" className="me-5">STORE</Nav.Link>
             <Nav.Link href="/about">ABOUT</Nav.Link>
+            <Nav.Link href="/contactus">Contact us</Nav.Link>
           </Nav>
           
         </Container>

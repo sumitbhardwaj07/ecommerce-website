@@ -13,11 +13,13 @@ import {
 import AboutPage from "./components/pages/About";
 import HomePage from "./components/pages/Home";
 import Footer from "./components/Layout/Footer";
+import ContactUs from "./components/pages/ContactUs";
 
 const router = createBrowserRouter([
   { path: "/about", element: <AboutPage /> },
   { path: "/home", element: <HomePage /> },
-  { path: "/store", element: <AvailableItems />}
+  { path: "/store", element: <AvailableItems />},
+  { path: "/contactus", element: <ContactUs />}
 ]);
 
 let App = () => {
@@ -34,6 +36,7 @@ let App = () => {
           <Route path="/store" element={<AvailableItems />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/home" element={<HomePage />} />
+          <Route path="/contactus" element={<ContactUs />} />
         </Routes>
         <Footer />
       </RouterProvider>
