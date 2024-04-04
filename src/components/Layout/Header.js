@@ -13,7 +13,7 @@ const Header = (props) => {
           <Nav >
             <Nav.Link href="/home" className="me-5">HOME</Nav.Link>
             <Nav.Link href="/store" className="me-5">STORE</Nav.Link>
-            <Nav.Link href="/about">ABOUT</Nav.Link>
+            <Nav.Link href="/about" className="me-5">ABOUT</Nav.Link>
             <Nav.Link href="/contactus">Contact us</Nav.Link>
           </Nav>
           

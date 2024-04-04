@@ -2,6 +2,7 @@ import React from "react";
 import { useCart } from "../store/cartContext";
 import { Button, Card, Col } from "react-bootstrap";
 
+
 const AvailableItem = ({ product }) => {
   const { addToCart } = useCart();
 

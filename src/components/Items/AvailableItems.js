@@ -1,7 +1,9 @@
 import {  Container, Row } from "react-bootstrap";
 import AvailableItem from "./AvailableItem";
+import './AvailableItems.css'
+import { Link } from "react-router-dom";
 
-const productsArr = [
+export const productsArr = [
   {
     title: "Colors",
 
@@ -37,10 +39,12 @@ const productsArr = [
 
 const AvailableItems = () => {
   const itemsList = productsArr.map((product, index) => (
-    <AvailableItem key={index} product={product}/>
+    <Link to={`/product/${index}`} key={index} className="product-link">
+      <AvailableItem product={product}/>
+    </Link>
   ));
   return (
-    <Container>
+    <Container >
       <h1 className="text-center mt-4">Our Products</h1>
       <Row className="mt-4">
         {itemsList}
