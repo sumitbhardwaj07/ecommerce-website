@@ -41,7 +41,7 @@ const Cart = (props) => {
             <p>{item.quantity}</p>
           </Col>
           <Col md={2}>
-            <Button variant="danger" onClick={handleRemove}>Remove</Button>
+            <Button variant="danger" onClick={() => handleRemove(index)}>Remove</Button>
           </Col>
         </Row>
       </Container>
