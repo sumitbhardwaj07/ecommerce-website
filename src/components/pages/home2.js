@@ -1,8 +1,9 @@
+// eslint-disable-next-line
 import { Button, Col, Container, Row } from "react-bootstrap";
 import './home2.css'
 const PendingHome = () => {
   return (
-    <Container className="max-width-container">
+    <Container className="max-width-container " style={{ backgroundColor: "white" }}>
       <Row className="underline-row">
         <Col md="2"><p>JUL16</p></Col>
         <Col md='2'><p>DETROIT,MI</p></Col>

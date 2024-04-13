@@ -1,5 +1,6 @@
-// ContactUs.js
+
 import { useState } from "react";
+// eslint-disable-next-line
 import { Button } from "react-bootstrap";
 import "./ContactUs.css";
 
@@ -29,10 +30,10 @@ const ContactUs = () => {
       });
       if (response.ok) {
         
-        console.log("Data submitted successfully!");
+        alert("Data submitted successfully!");
       } else {
     
-        console.error("Error submitting data");
+        alert("Error submitting data");
       }
     } catch (error) {
       console.error("Error:", error);

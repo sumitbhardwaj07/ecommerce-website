@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import {  Button, Container, Nav, Navbar } from "react-bootstrap";
 import { useCart } from "../store/cartContext";
 import { useContext } from "react";
@@ -31,7 +32,7 @@ const Header = (props) => {
       </Navbar>
       
       <div className="mt-1 bg-secondary text-white py-4 text-center">
-        <h1 className="display-2 font-custom">The Generics</h1>
+        <h1 className="display-2 font-custom">𝓠𝓾𝓲𝓬𝓴 𝓒𝓪𝓻𝓽</h1>
       </div>
     </div>
   );
