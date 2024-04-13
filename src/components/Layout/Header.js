@@ -28,7 +28,7 @@ const Header = (props) => {
           </Nav>
           
         </Container>
-        <Button variant="outline-info" onClick={props.show} style={{ color: "white", position: "absolute", top: "10px", right: "60px" }}>cart({cartItems.length})</Button>
+        {isLoggedIn && <Button variant="outline-info" onClick={props.show} style={{ color: "white", position: "absolute", top: "10px", right: "60px" }}>cart({cartItems.length})</Button>}
       </Navbar>
       
       <div className="mt-1 bg-secondary text-white py-4 text-center">

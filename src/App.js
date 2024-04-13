@@ -33,7 +33,7 @@ const App = () => {
     <CartProvider>
       <Router>
         <Suspense fallback={<div>Loading...</div>}>
-          <Cart show={showCart} onClose={handleClose} />}
+          <Cart show={showCart} onClose={handleClose} />
           <Header show={handleShow} />
           <Routes>
             {!authCtx.isLoggedIn && (
